@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        #main {
+            width: 1500px;
+            height: 800px;
+        }
+
+        #v1 {
+            width: 1500px;
+            height: 50px;
+            overflow: hidden;
+            background-color: #4a90e2;
+        }
+
+        .image-container {
+            width: 4500px;
+            animation: slide 20s linear infinite;
+        }
+
+        .slide {
+            float: left;
+            width: 1500px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 50px;
+        }
+
+        @keyframes slide {
+            0% {
+                margin-left: 0;
+            }
+
+            25% {
+                margin-left: 0;
+            }
+
+            50% {
+                margin-left: -1500px;
+            }
+
+            75% {
+                margin-left: -3000px;
+            }
+
+            100% {
+                margin-left: -4500px;
+            }
+        }
+
+        #v2 {
+            width: 1500px;
+            height: 80px;
+            background-color: #4a90e2;
+        }
+
+        select {
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            float: left;
+            margin-left: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #4a90e2;
+            color: white;
+            border-color: white;
+        }
+
+        #seach {
+            width: 350px;
+            height: 40px;
+            float: left;
+            margin-left: 30px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #iconseach {
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #logo {
+            width: 200px;
+            height: 80px;
+            float: left;
+            margin-left: 50px;
+        }
+
+        .bntv1 {
+            width: 100px;
+            height: 45px;
+            float: left;
+            text-align: center;
+            margin-top: -30px;
+            margin-left: 50px;
+            background-color: #4a90e2;
+            border: 1px solid white;
+            color: white;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bntv11 {
+            width: 100px;
+            height: 50px;
+            float: left;
+            text-align: center;
+            margin-top: -30px;
+            margin-left: 30px;
+            background-color: #4a90e2;
+            border: none;
+            border-right: 1px solid white;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .textv1 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 30px;
+        }
+
+        #v3 {
+            width: 1500px;
+            height: 50px;
+            background-color: #4a90e2;
+        }
+
+        #danhmuc {
+            width: 150px;
+            height: 20px;
+            margin-left: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+            border-right: 1px solid white;
+            margin-top: 15px;
+        }
+
+        #danhmuc1 {
+            width: 70px;
+            height: 30px;
+            margin-left: 80px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        #danhmuc1:hover {
+            color: black;
+        }
+
+        #danhmuc:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        #v4 {
+            width: 1500px;
+            height: 450px;
+
+        }
+
+        #v41 {
+            width: 200px;
+            height: 450px;
+            background-color: beige;
+            float: left;
+            overflow-y: auto;
+        }
+
+        #textv41 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: black;
+            text-decoration: none;
+            line-height: 40px;
+        }
+
+        #textv41:hover {
+            color: #4a90e2;
+        }
+
+        #v42 {
+            width: 850px;
+            height: 450px;
+            background-color: beige;
+            float: left;
+            background-image: url(v1.png);
+        }
+
+        #v43 {
+            width: 445px;
+            height: 445px;
+            background-color: rgb(236, 236, 236);
+            float: left;
+            box-shadow: 2px 2px 2px 2px#b9d1ec;
+            border-radius: 4px;
+        }
+
+        #v5 {
+            width: 1500px;
+            height: 100px;
+            margin-top: 20px;
+            margin-top: -150px;
+        }
+
+        #textv5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        #dk {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        #sdt {
+            width: 400px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        #tiep {
+            width: 400px;
+            height: 40px;
+            background-color: #4a90e2;
+            border: none;
+            color: white;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        #bv {
+            margin-top: 100px;
+            text-align: center;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        #dc {
+            margin-top: 40px;
+            padding-left: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color:#4a90e2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #hoac {
+            text-align: center;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(123, 123, 123);
+            font-size: 14px;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            font-size: 18px;
+            border: 1px solid black;
+            float: left;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        #hoac {
+            text-align: center;
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(123, 123, 123);
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+
+        <div id="v1">
+            <div class="image-container">
+                <div class="slide"><img src="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Trang chủ\a1.PNG"
+                        alt="Image 1"></div>
+                <div class="slide"><img src="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Trang chủ\a2.PNG"
+                        alt="Image 2"></div>
+                <div class="slide"><img src="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Trang chủ\a3.PNG"
+                        alt="Image 3"></div>
+            </div>
+        </div>
+        <div id="v2">
+            <div><img src="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Trang chủ\logo.PNG" id="logo"></div>
+            <div><select>
+                    <option>Xem giá trực tiếp tại: Hà Nội</option>
+                    <option>Xem giá trực tiếp tại: Hồ Chí Minh</option>
+                    <option>Xem giá trực tiếp tại: Lạng Sơn</option>
+                </select>
+            </div>
+            <div><input type="text" placeholder="Bạn muốn tìm gì" id="seach"></div>
+            <div><i class="fa-solid fa-magnifying-glass" id="iconseach"></i></div>
+            <div><a href="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Tài khoản\login.html"><input type="button"
+                        value="Tài khoản" class="bntv1"></a></div>
+                        <div><a href="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Gio hang\Gio_hang.html"><input type="button" value="Giỏ hàng" class="bntv1"></a></div>
+            <div><input type="button" value="Tư vấn" class="bntv11"></div>
+            <div><input type="button" value="Khuyến mãi" class="bntv11"></div>
+        </div>
+        <div id="v3">
+            <div><a href="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Trang chủ\gt_canhan.html" id="danhmuc">Trang
+                    chủ</a></div>
+            <div><a href="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Tủ lạnh\tu_lanh.html" id="danhmuc1">Tủ lạnh</a>
+            </div>
+            <div><a href="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Tivi\Tivi.html" id="danhmuc1">Tivi</a></div>
+            <div><a href="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Máy giặt\may_giat.html" id="danhmuc1">Máy
+                    giặt</a></div>
+        </div>
+        <div id="v4">
+            <div id="v41">
+                <ul>
+                    <li><a href="#" id="textv41">Sony</a></li>
+                    <li><a href="#" id="textv41">LG</a></li>
+                    <li><a href="#" id="textv41">Panasonic</a></li>
+                    <li><a href="#" id="textv41">Netflix</a></li>
+                    <li><a href="#" id="textv41">Samsung</a></li>
+                    <li><a href="#" id="textv41">HTC</a></li>
+                    <li><a href="#" id="textv41">Sharp</a></li>
+                    <li><a href="#" id="textv41">Coocaa</a></li>
+                    <li><a href="#" id="textv41">TV Remote</a></li>
+                    <li><a href="#" id="textv41">HDMI</a></li>
+                    <li><a href="#" id="textv41">Usb</a></li>
+                    <li><a href="#" id="textv41">Full HD</a></li>
+                    <li><a href="#" id="textv41">LCD</a></li>
+                    <li><a href="#" id="textv41">OLED</a></li>
+            </div>
+            <div id="v42"></div>
+            <div id="v43">
+                <div id="dk">Đăng nhập để tiếp tục mua sắm</div>
+                <div><input type="text" name="txtdk" placeholder="Số điện thoại" id="sdt"></div>
+                <div><input type="password" name="txtmk" placeholder="Nhập mật khẩu" id="sdt"></div>
+                <div><a href="G:\Thiết kế web\bt thiết kế web\bt_gt_ca_nhan\Trang chủ\gt_canhan.html"><input
+                            type="button" value="TIẾP THEO" id="tiep"></a></div>
+                <div id="hoac">HOẶC</div>
+                <div>
+                    <button><i class="fa-brands fa-facebook"></i> Facebook</button>
+                </div>
+                <div>
+                    <button><i class="fa-brands fa-google"></i> Google</button>
+                </div>
+                <div id="bv">Bằng việc đăng kí, bạn đã đồng ý với Hiểu về <a href="#"> Điều Khoản dịch vụ </a> & <a
+                        href="#">
+                        Chính Sách Bảo Mật</a></div>
+                <div id="dc">Bạn chưa có tài khoản? <a href="#">Đăng ký</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="v5">
+        <div id="textv5">© 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
+            02/01/2007.
+            GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021.
+            Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô
+            T2-1.2, Đường D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+            cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Email: Tot.huynhvan@thegioididong.com.
+            Xem chính sách sử dụng</div>
+    </div>
+    </div>
+</body>
+
+</html>
